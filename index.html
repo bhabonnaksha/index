@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhabon Naksha Consultant - Construction Consulting</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Light blue-gray background */
+        }
+        /* Basic animation for fade-in/out */
+        .fade-in {
+            animation: fadeIn 0.3s ease-out forwards;
+        }
+        .fade-out {
+            animation: fadeOut 0.3s ease-out forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeOut {
+            from { opacity: 1; transform: translateY(0); }
+            to { opacity: 0; transform: translateY(-10px); }
+        }
+    </style>
+</head>
+<body class="antialiased text-gray-800">
+
+    <!-- Header/Navigation - Made sticky and rounded -->
+    <header class="bg-white shadow-md py-4 fixed top-0 left-0 right-0 z-50 rounded-b-xl">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-blue-700 rounded-lg p-2 hover:bg-blue-50 transition duration-300">Bhabon Naksha Consultant</a>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#services" class="text-gray-700 hover:text-blue-700 font-medium transition duration-300 rounded-lg p-2 hover:bg-gray-100">Services</a></li>
+                    <li><a href="#about" class="text-gray-700 hover:text-blue-700 font-medium transition duration-300 rounded-lg p-2 hover:bg-gray-100">About Us</a></li>
+                    <li><a href="#contact" class="text-gray-700 hover:text-blue-700 font-medium transition duration-300 rounded-lg p-2 hover:bg-gray-100">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- To prevent content from being hidden behind the fixed header, add padding-top to the body or the first section -->
+    <div class="pt-20"> <!-- Adjust this value based on header height -->
+
+        <!-- Hero Section -->
+        <section class="bg-gradient-to-r from-blue-700 to-indigo-800 text-white py-20 md:py-32 text-center rounded-b-3xl shadow-lg mx-4 mt-4">
+            <div class="container mx-auto px-4">
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6 animate-fade-in-down">
+                    Expert Construction Consulting <span class="block mt-2 text-yellow-300">for Your Success</span>
+                </h1>
+                <p class="text-lg md:text-xl mb-10 max-w-3xl mx-auto opacity-90 animate-fade-in-up">
+                    Providing strategic guidance and innovative solutions for complex construction projects, from concept to completion.
+                </p>
+                <a href="#services" class="bg-white text-blue-700 hover:bg-blue-100 px-8 py-4 rounded-full text-lg font-semibold shadow-xl transition duration-300 transform hover:scale-105 inline-block animate-bounce-once">
+                    Discover Our Services
+                </a>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-16 md:py-24 bg-white mx-4 mt-8 rounded-xl shadow-md">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-blue-700">Our Core Services</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Service 1: Architectural Design -->
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                        <div class="text-blue-600 mb-4 text-5xl text-center">📐</div>
+                        <h3 class="text-xl font-semibold mb-3 text-center">Architectural Design</h3>
+                        <p class="text-gray-600 text-center">
+                            Creating innovative and functional designs that bring your vision to life.
+                        </p>
+                    </div>
+                    <!-- Service 2: Structural Design -->
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                        <div class="text-blue-600 mb-4 text-5xl text-center">🏗️</div>
+                        <h3 class="text-xl font-semibold mb-3 text-center">Structural Design</h3>
+                        <p class="text-gray-600 text-center">
+                            Ensuring the safety, stability, and integrity of your building projects.
+                        </p>
+                    </div>
+                    <!-- Service 3: Duplex House Design -->
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                        <div class="text-blue-600 mb-4 text-5xl text-center">🏡</div>
+                        <h3 class="text-xl font-semibold mb-3 text-center">Duplex House Design</h3>
+                        <p class="text-gray-600 text-center">
+                            Specialized designs for modern and efficient duplex housing solutions.
+                        </p>
+                    </div>
+                    <!-- Service 4: Municipal Plan Approval -->
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                        <div class="text-blue-600 mb-4 text-5xl text-center">📄</div>
+                        <h3 class="text-xl font-semibold mb-3 text-center">Municipal Plan Approval</h3>
+                        <p class="text-gray-600 text-center">
+                            Navigating local regulations to secure timely plan approvals for your projects.
+                        </p>
+                    </div>
+                    <!-- Service 5: Project Management -->
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                        <div class="text-blue-600 mb-4 text-5xl text-center">📈</div>
+                        <h3 class="text-xl font-semibold mb-3 text-center">Project Management</h3>
+                        <p class="text-gray-600 text-center">
+                            Comprehensive oversight to ensure your projects are delivered on time and within budget.
+                        </p>
+                    </div>
+                    <!-- Service 6: Project Master Plan -->
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                        <div class="text-blue-600 mb-4 text-5xl text-center">🗺️</div>
+                        <h3 class="text-xl font-semibold mb-3 text-center">Project Master Plan</h3>
+                        <p class="text-gray-600 text-center">
+                            Developing strategic blueprints for large-scale and complex developments.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-16 md:py-24 bg-gray-100 mx-4 mt-8 rounded-xl shadow-md">
+            <div class="container mx-auto px-4 text-center max-w-3xl">
+                <h2 class="text-3xl md:text-4xl font-bold mb-8 text-blue-700">About Bhabon Naksha Consultant</h2>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    Bhabon Naksha Consultant is a leading construction consulting firm dedicated to empowering clients with expert advice and innovative solutions. With years of industry experience, our team of seasoned professionals brings unparalleled knowledge to every project, ensuring efficiency, compliance, and successful outcomes. We partner with you to overcome challenges and build lasting value.
+                </p>
+            </div>
+        </section>
+
+        <!-- Call to Action / Contact Section -->
+        <section id="contact" class="bg-gradient-to-r from-indigo-800 to-blue-700 text-white py-16 md:py-24 text-center rounded-t-3xl shadow-lg mx-4 my-8">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Build Your Vision?</h2>
+                <p class="text-lg md:text-xl mb-10 max-w-2xl mx-auto opacity-90">
+                    Contact Bhabon Naksha Consultant today to discuss how we can help you achieve your construction goals.
+                </p>
+                <!-- Changed href to call JavaScript function -->
+                <button id="openContactModal" class="bg-white text-blue-700 hover:bg-blue-100 px-8 py-4 rounded-full text-lg font-semibold shadow-xl transition duration-300 transform hover:scale-105 inline-block">
+                    Get a Consultation
+                </button>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-gray-800 text-white py-8 text-center rounded-b-xl mx-4 mb-4">
+            <div class="container mx-auto px-4">
+                <p>&copy; 2025 Bhabon Naksha Consultant. All rights reserved.</p>
+                <div class="flex justify-center space-x-6 mt-4">
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">Terms of Service</a>
+                </div>
+            </div>
+        </footer>
+
+    </div> <!-- End of pt-20 div -->
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="fixed inset-0 bg-gray-900 bg-opacity-75 flex items-center justify-center z-50 hidden p-4">
+        <div class="bg-white rounded-lg shadow-2xl p-8 max-w-md w-full relative transform scale-95 opacity-0 transition-all duration-300 ease-out" id="modalContent">
+            <button id="closeContactModal" class="absolute top-4 right-4 text-gray-500 hover:text-gray-800 text-2xl font-bold">
+                &times;
+            </button>
+            <h3 class="text-3xl font-bold text-blue-700 mb-6 text-center">Contact Us</h3>
+            <div class="space-y-4 text-lg">
+                <p><strong class="text-blue-600">Email:</strong> <a href="mailto:bhabonnaksha@gmail.com" class="text-gray-700 hover:underline">bhabonnaksha@gmail.com</a></p>
+                <p><strong class="text-blue-600">Phone:</strong> <a href="tel:+8801736571719" class="text-gray-700 hover:underline">+8801736-571719</a></p>
+                <p><strong class="text-blue-600">Address:</strong> Alekarchar, Gomti Housing, Adarsha ​​Sadar, Cumilla</p>
+                <p class="text-gray-500 text-sm mt-4">We look forward to hearing from you!</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const openModalBtn = document.getElementById('openContactModal');
+            const closeModalBtn = document.getElementById('closeContactModal');
+            const contactModal = document.getElementById('contactModal');
+            const modalContent = document.getElementById('modalContent');
+
+            // Function to show the modal
+            openModalBtn.addEventListener('click', function() {
+                contactModal.classList.remove('hidden');
+                // Trigger reflow to ensure transition plays
+                void modalContent.offsetWidth; // Force reflow
+                modalContent.classList.remove('scale-95', 'opacity-0');
+                modalContent.classList.add('scale-100', 'opacity-100', 'fade-in');
+            });
+
+            // Function to hide the modal
+            closeModalBtn.addEventListener('click', function() {
+                modalContent.classList.remove('scale-100', 'opacity-100', 'fade-in');
+                modalContent.classList.add('scale-95', 'opacity-0', 'fade-out');
+                // Use a timeout to ensure the fade-out animation starts before hiding
+                setTimeout(() => {
+                    contactModal.classList.add('hidden');
+                }, 300); // Match this duration with your CSS transition/animation duration
+            });
+
+            // Close modal when clicking outside of it
+            contactModal.addEventListener('click', function(event) {
+                if (event.target === contactModal) {
+                    closeModalBtn.click(); // Simulate click on close button
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
